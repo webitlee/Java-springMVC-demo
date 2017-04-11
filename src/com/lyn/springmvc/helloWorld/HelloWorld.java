@@ -5,9 +5,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class HelloWorld {
-	//Ê¹ÓÃRequestMappingÀ´Ó³ÉäÇëÇóµÄurl
-	//·µ»ØÖµÍ¨¹ıÊÓÍ¼½âÎöÆ÷½âÎöÎªÊµ¼ÊµÄÎïÀíÊÓÍ¼£¬¶ÔÓÚInternalResourceViewResolverÊÓÍ¼½âÎöÆ÷£¬»á×öÈçÏÂ½âÎö£º
-	//Í¨¹ıprefix + returnValue + stuffixµÄ·½Ê½µÃµ½Êµ¼ÊµÄÎïÀíÊÓÍ¼£¬È»ºó×ö×ª·¢²Ù×÷
+	//ä½¿ç”¨RequestMappingæ¥æ˜ å°„è¯·æ±‚çš„url
+	//è¿”å›å€¼é€šè¿‡è§†å›¾è§£æå™¨è§£æä¸ºå®é™…çš„ç‰©ç†è§†å›¾ï¼Œå¯¹äºInternalResourceViewResolverè§†å›¾è§£æå™¨ï¼Œä¼šåšå¦‚ä¸‹è§£æï¼š
+	//é€šè¿‡prefix + returnValue + suffixçš„æ–¹å¼å¾—åˆ°å®é™…çš„ç‰©ç†è§†å›¾ï¼Œç„¶ååšè½¬å‘æ“ä½œ
 	// /WEB-INF/views/helloWorld.jsp
 	@RequestMapping("/hello")
 	public String hello(){

@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<a href="/springMVC/helloWorld">hello world</a>
+	<a href="/springMVC/hello">hello world</a>
 </body>
 </html>
