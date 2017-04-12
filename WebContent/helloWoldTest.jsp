@@ -10,5 +10,29 @@
 	<a href="/springMVC/hello">hello world</a>
 	<br/>
 	<a href="/springMVC/springmvc/requestMapping">test requestMapping</a>
+	<br/>
+	<!-- 这里是一个 get请求-->
+	<a href="/springMVC/springmvc/requestMapping2">test requestMapping2</a>
+	<form action="/springMVC/springmvc/requestMapping2" method="post">
+		<input type="submit" value="提交"/>
+	</form>
+	<br/>
+	<a href="/springMVC/springmvc/pathVariable/2222">test PathVariable</a>
+	<br/>
+	<a href="/springMVC/springmvc/testRest/1">test REST get</a>
+	<br/>
+	<form action="/springMVC/springmvc/testRest/1" method="post">
+		<input type="submit" value="test REST post"/>
+	</form>
+	<br/>
+	<form action="/springMVC/springmvc/testRest/1" method="post">
+		<input type="hidden" name="_method" value="DELETE"/>
+		<input type="submit" value="test REST DELETE"/>
+	</form>
+	<br/>
+	<form action="/springMVC/springmvc/testRest/1" method="post">
+		<input type="hidden" name="_method" value="PUT"/>
+		<input type="submit" value="test REST PUT"/>
+	</form>
 </body>
 </html>
