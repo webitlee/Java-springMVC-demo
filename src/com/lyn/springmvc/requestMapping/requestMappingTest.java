@@ -1,9 +1,11 @@
 package com.lyn.springmvc.requestMapping;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CookieValue;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @RequestMapping("/springmvc")
 @Controller
@@ -64,6 +66,21 @@ public class requestMappingTest {
 	@RequestMapping(value="/testRest/{id}", method=RequestMethod.DELETE)
 	public String testRestDelete(@PathVariable("id") Integer id){
 		System.out.println("test REST DELETE");
+		return SUCCESS;
+	}
+	
+	//使用@RequestParam绑定请求参数组
+	//value值为请求参数名，required表示该参数是否必须，defalutValue,请求参数的默认值
+	@RequestMapping("/testRequestParam")
+	public String testRequestParam(@RequestParam(value="user") String user, @RequestParam(value="age", required=false, defaultValue="0") Integer age){
+		System.out.println("test RequestParam" + user + " " + age);
+		return SUCCESS;
+	}
+	
+	//使用@CookieValue绑定请求中的cookie值,映射一个cookie值，属性同@RequestParam
+	@RequestMapping("/testCookieValue")
+	public String testCookieValue(@CookieValue("JSESSIONID") String sessionId){
+		System.out.println("cookieValue:" + sessionId);
 		return SUCCESS;
 	}
 }
