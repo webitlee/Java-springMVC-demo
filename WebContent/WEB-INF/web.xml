@@ -20,6 +20,7 @@
 	</servlet-mapping>
 	
 	<!-- 配置HiddenHttpMethodFilter,可以把POST请求转为DELETE或PUT请求 -->
+	<!-- 
 	<filter>
 		<filter-name>HiddenHttpMethodFiter</filter-name>
 		<filter-class>org.springframework.web.filter.HiddenHttpMethodFilter</filter-class>
@@ -28,4 +29,5 @@
 		<filter-name>HiddenHttpMethodFilter</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
+	 -->
 </web-app>

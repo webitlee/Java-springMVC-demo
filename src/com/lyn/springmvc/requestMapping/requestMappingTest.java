@@ -1,11 +1,16 @@
 package com.lyn.springmvc.requestMapping;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CookieValue;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import com.lyn.springmvc.entity.User;
 
 @RequestMapping("/springmvc")
 @Controller
@@ -81,6 +86,22 @@ public class requestMappingTest {
 	@RequestMapping("/testCookieValue")
 	public String testCookieValue(@CookieValue("JSESSIONID") String sessionId){
 		System.out.println("cookieValue:" + sessionId);
+		return SUCCESS;
+	}
+	
+	//SpringMVC会按请求参数名和POJO属性名进行自动匹配，自动为该对象填充属性值。支持级联属性。
+	@RequestMapping("/testPojo")
+	public String testPojo(User user){
+		System.out.println("Pojo:" + user);
+		return SUCCESS;
+	}
+	
+	//可以使用Servlet的原生api作为目标方法的参数，具体支持以下类型：
+	//HttpServletRequest\HttpServletResponse\HttpSession\java.securiy.Pricipal\Locale
+	//InputStream\OutputStream\Reader\Writer
+	@RequestMapping("/testServletApi")
+	public String testServletApi(HttpServletRequest request, HttpServletResponse response){
+		System.out.println("test ServletApi" + request + "..." + response);
 		return SUCCESS;
 	}
 }

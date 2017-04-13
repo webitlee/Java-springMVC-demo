@@ -36,5 +36,21 @@
 	</form>
 	<br/>
 	<a href="/springMVC/springmvc/testRequestParam?user=lee&age=20">test RequestParam</a>
+	<br/>
+	<form action="/springMVC/springmvc/testPojo" method="post">
+		用户名：<input name="username" type="text"/>
+		<br/>
+		密码：<input name="password" type="password"/>
+		<br/>
+		年龄：<input name="age" type="text"/>
+		<br/>
+		省：<input name="address.province" type="text"/>
+		<br/>
+		市：<input name="address.city" type="text"/>
+		<br/>
+		<input type="submit" value="提交"/>
+	</form>
+	<br/>
+	<a href="/springMVC/springmvc/testServletApi">test ServletApi</a>
 </body>
 </html>
