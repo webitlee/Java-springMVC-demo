@@ -52,5 +52,11 @@
 	</form>
 	<br/>
 	<a href="/springMVC/springmvc/testServletApi">test ServletApi</a>
+	<br/>
+	<a href="/springMVC/testModelAndView">test ModelAndView</a>
+	<br/>
+	<a href="/springMVC/testMap">test Map</a>
+	<br/>
+	<a href="/springMVC/testSessionAttribute">test SessionAttribute</a>
 </body>
 </html>
