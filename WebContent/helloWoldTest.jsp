@@ -67,5 +67,7 @@
 		<br/>
 		<input type="submit" value="提交"/>
 	</form>
+	<br/>
+	<a href="/springMVC/testViewResolver">test viewResolver</a>
 </body>
 </html>
