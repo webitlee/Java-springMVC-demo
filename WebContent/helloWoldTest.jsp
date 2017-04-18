@@ -58,5 +58,14 @@
 	<a href="/springMVC/testMap">test Map</a>
 	<br/>
 	<a href="/springMVC/testSessionAttribute">test SessionAttribute</a>
+	<br/>
+	<form action="/springMVC/testModelAttribute" method="post">
+		<input type="hidden" name="id" value="1"/>
+		username:<input type="text" name="username" value="lee"/>
+		<br/>
+		age:<input type="text" name="age" value="20"/>
+		<br/>
+		<input type="submit" value="提交"/>
+	</form>
 </body>
 </html>

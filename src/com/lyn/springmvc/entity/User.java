@@ -1,10 +1,18 @@
 package com.lyn.springmvc.entity;
 
 public class User {
+	private Integer id;
 	private String username;
 	private String password;
 	private int age;
 	private Address address = null;
+	
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
 	public String getUsername() {
 		return username;
 	}
@@ -29,9 +37,9 @@ public class User {
 	public void setAddress(Address address) {
 		this.address = address;
 	}
+	
 	@Override
 	public String toString() {
-		return "User [username=" + username + ", password=" + password + ", age=" + age + ", address=" + address + "]";
+		return "User [id=" + id + ", username=" + username + ", password=" + password + ", age=" + age + "]";
 	}
-	
 }
