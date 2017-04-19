@@ -14,4 +14,16 @@
 		<property name="prefix" value="/WEB-INF/views/"></property>
 		<property name="suffix" value=".jsp"></property>
 	</bean>
+	
+	<!-- 配置BeanNameViewResolver视图解析器 ,使用视图的名字来解析视图-->
+	<bean class="org.springframework.web.servlet.view.BeanNameViewResolver">
+		<!-- 通过order属性定义视图解析器的优先级,值越小优先级越高 -->
+		<property name="order" value="100"></property>
+	</bean>
+	<!-- 配置直接转发的页面 -->
+	<!-- 可以直接响应转发的页面，无需再经过Handler的方法 -->
+	<mvc:view-controller path="/success" view-name="modelDataTest"/>
+	<!--  mvc:view-controller标签会导致@RequestMapping映射失效-->
+	<!-- 在实际开发中，都需要配置mvc:annotation-driven标签 -->
+	<mvc:annotation-driven></mvc:annotation-driven>
 </beans>

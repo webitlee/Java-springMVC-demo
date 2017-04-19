@@ -69,5 +69,7 @@
 	</form>
 	<br/>
 	<a href="/springMVC/testViewResolver">test viewResolver</a>
+	<br/>
+	<a href="/springMVC/testView">test　View</a>
 </body>
 </html>
