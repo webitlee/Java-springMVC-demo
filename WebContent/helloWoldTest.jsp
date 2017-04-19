@@ -71,5 +71,9 @@
 	<a href="/springMVC/testViewResolver">test viewResolver</a>
 	<br/>
 	<a href="/springMVC/testView">test　View</a>
+	<br/>
+	<a href="/springMVC/testRedirect">test Redirect</a>
+	<br/>
+	<a href="/springMVC/testForward">test forward</a>
 </body>
 </html>
