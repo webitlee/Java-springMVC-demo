@@ -26,4 +26,6 @@
 	<!--  mvc:view-controller标签会导致@RequestMapping映射失效-->
 	<!-- 在实际开发中，都需要配置mvc:annotation-driven标签 -->
 	<mvc:annotation-driven></mvc:annotation-driven>
+	<!-- 处理静态资源 -->
+	<mvc:default-servlet-handler/>
 </beans>
