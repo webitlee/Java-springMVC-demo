@@ -10,9 +10,9 @@ public class Convertor implements Converter<String, User> {
 	
 	public User convert(String source) {
 		User user = null;
-		System.out.println(source);
 		if(source != null){
-			String [] arr = source.split("$");
+			String [] arr = source.split("-");
+			System.out.println(arr.length);
 			if(arr != null && arr.length == 5){
 				user = new User();
 				Address address = new Address();
