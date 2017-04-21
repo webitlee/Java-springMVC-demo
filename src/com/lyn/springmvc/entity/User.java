@@ -37,9 +37,10 @@ public class User {
 	public void setAddress(Address address) {
 		this.address = address;
 	}
-	
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", username=" + username + ", password=" + password + ", age=" + age + "]";
+		return "User [id=" + id + ", username=" + username + ", password=" + password + ", age=" + age + ", address="
+				+ address + "]";
 	}
+	
 }

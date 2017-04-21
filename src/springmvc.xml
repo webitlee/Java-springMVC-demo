@@ -24,8 +24,18 @@
 	<!-- 可以直接响应转发的页面，无需再经过Handler的方法 -->
 	<mvc:view-controller path="/success" view-name="modelDataTest"/>
 	<!--  mvc:view-controller标签会导致@RequestMapping映射失效-->
-	<!-- 在实际开发中，都需要配置mvc:annotation-driven标签 -->
-	<mvc:annotation-driven></mvc:annotation-driven>
+	
 	<!-- 处理静态资源 -->
 	<mvc:default-servlet-handler/>
+	<!-- 在实际开发中，都需要配置mvc:annotation-driven标签 -->
+	<mvc:annotation-driven conversion-service="conversionService"></mvc:annotation-driven>
+	
+	<!-- 配置ConversionService -->
+	<bean id="conversionService" class="org.springframework.context.support.ConversionServiceFactoryBean">
+	    <property name="converters">
+	        <set>
+	            <ref bean="convertor"/>
+	        </set>
+	    </property>
+	</bean>
 </beans>

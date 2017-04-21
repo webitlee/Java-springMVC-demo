@@ -75,5 +75,10 @@
 	<a href="/springMVC/testRedirect">test Redirect</a>
 	<br/>
 	<a href="/springMVC/testForward">test forward</a>
+	<br/>
+	<form action="/springMVC/testConvertor" method="post">
+		User:<input type="text" name="user"/>
+		<input type="submit" value="test Converter"/>
+	</form>
 </body>
 </html>
