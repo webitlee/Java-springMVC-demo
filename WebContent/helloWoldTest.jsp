@@ -80,5 +80,22 @@
 		User:<input type="text" name="user"/>
 		<input type="submit" value="test Converter"/>
 	</form>
+	<br/>
+	<form action="/springMVC/testDateTimeFormat" method="post">
+		<input type="hidden" name="id"/>
+		name:<input type="text" name="username"/>
+		<br/>
+		birth:<input type="text" name="birth"/>
+		<br/>
+		salary:<input type="text" name="salary"/>
+		<br/>
+		age:<input type="text" name="age"/>
+		<br/>
+		province:<input type="text" name="address.province"/>
+		<br/>
+		city:<input type="text" name="address.city"/>
+		<br/>
+		<input type="submit" value="test DateTimeFormat"/>
+	</form>
 </body>
 </html>
