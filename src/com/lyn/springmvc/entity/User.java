@@ -7,7 +7,7 @@ import javax.validation.constraints.Past;
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.format.annotation.NumberFormat;
-
+import org.springframework.stereotype.Repository;
 public class User {
 	private Integer id;
 	@NotEmpty(message="用户名不可为空")

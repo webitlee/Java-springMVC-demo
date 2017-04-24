@@ -5,6 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+<script src="/springMVC/script/jquery-3.0.0.min.js"></script>
 </head>
 <body>
 	<a href="/springMVC/hello">hello world</a>
@@ -96,6 +97,17 @@
 		city:<input type="text" name="address.city"/>
 		<br/>
 		<input type="submit" value="test DateTimeFormat"/>
+		<br/>
+		<a href="/springMVC/testJson" id="return_json">test return JSON</a>
 	</form>
 </body>
+<script>
+	$('#return_json').click(function(e){
+		e.preventDefault();
+		$.post($(this).attr('href'),{}, function(data){
+			console.log(data);
+		})
+	})
+	
+</script>
 </html>
