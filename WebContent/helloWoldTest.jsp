@@ -100,6 +100,11 @@
 		<br/>
 		<a href="/springMVC/testJson" id="return_json">test return JSON</a>
 	</form>
+	<br/>
+	<form action="/springMVC/testResponseBody" method="post" enctype="multipart/form-data">
+		<input type="file"/>
+		<input type="submit" value="test @ResponseBody"/>
+	</form>
 </body>
 <script>
 	$('#return_json').click(function(e){

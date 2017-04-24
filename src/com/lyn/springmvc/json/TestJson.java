@@ -5,8 +5,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.portlet.bind.annotation.ResourceMapping;
 
 import com.lyn.springmvc.entity.Address;
 
@@ -15,7 +15,7 @@ import com.lyn.springmvc.entity.Address;
 public class TestJson {
 	
 	@ResponseBody
-	@ResourceMapping("/testJson")
+	@RequestMapping("/testJson")
 	public Map<String, Address> testJson(){
 		Address address = new Address();
 		address.setProvince("黑龙江");
