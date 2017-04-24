@@ -2,13 +2,18 @@ package com.lyn.springmvc.entity;
 
 import java.util.Date;
 
+import javax.validation.constraints.Past;
+
+import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.format.annotation.NumberFormat;
 
 public class User {
 	private Integer id;
+	@NotEmpty(message="用户名不可为空")
 	private String username;
 	private String password;
+	@Past(message="出生日期填写不正确")
 	@DateTimeFormat(pattern="yyyy-MM-dd")
 	private Date birth;
 	@NumberFormat(pattern="#,###,###.#")
