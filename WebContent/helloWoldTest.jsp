@@ -105,6 +105,12 @@
 		<input type="file"/>
 		<input type="submit" value="test @ResponseBody"/>
 	</form>
+	<br/>
+	<form action="/springMVC/testFileUpload" method="post" enctype="multipart/form-data">
+		<input type="file" name="file"/>
+		<input type="text" name="desc"/>
+		<input type="submit" value="test fileUpload"/>
+	</form>
 </body>
 <script>
 	$('#return_json').click(function(e){
