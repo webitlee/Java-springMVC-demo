@@ -45,4 +45,17 @@
 	    <!-- 设置最大上传字节数 -->
 	    <property name="maxUploadSize" value="1024000"></property>
 	</bean>
+	
+	<!-- 配置自定义拦截器 -->
+	<mvc:interceptors>
+	    <!-- 拦截所有资源 -->
+	    <!-- 
+	    <bean class="com.lyn.springmvc.interceptor.TestInterceptor"></bean>
+	     -->
+	     <!-- 拦截指定资源 -->
+	     <mvc:interceptor>
+	         <mvc:mapping path="/testModelAttribute"/>
+	         <bean class="com.lyn.springmvc.interceptor.TestInterceptor"></bean>
+	     </mvc:interceptor>
+	</mvc:interceptors>
 </beans>
