@@ -117,6 +117,8 @@
 	<a href="/springMVC/testResponseStatusExceptionResolver?id=10">test ResponseStatusExceptionResolver</a>
 	<br/>
 	<a href="/springMVC/testDefaultHandlerExceptionResolver">test DefaultHandlerExceptionResolver</a>
+	<br/>
+	<a href="/springMVC/testSimpleMappingExceptionResolver?id=10">test SimpleMappingExceptionResolver</a>
 </body>
 <script>
 	$('#return_json').click(function(e){

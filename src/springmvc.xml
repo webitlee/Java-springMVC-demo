@@ -58,4 +58,16 @@
 	         <bean class="com.lyn.springmvc.interceptor.TestInterceptor"></bean>
 	     </mvc:interceptor>
 	</mvc:interceptors>
+	
+	<!--  配置使用SimpleMappingExceptionResolver-->
+	<bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+	    <!-- 配置放入到request对象中属性名，默认为"exception" -->
+	    <property name="exceptionAttribute" value="ex"></property>
+	    <property name="exceptionMappings">
+	        <props>
+	            <!-- 发生此类异常跳转到的页面 -->
+	            <prop key="java.lang.ArrayIndexOutOfBoundsException">error</prop>
+	        </props>
+	    </property>
+	</bean>
 </beans>

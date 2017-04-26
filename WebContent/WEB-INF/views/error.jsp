@@ -10,5 +10,6 @@
 <body>
 <h1 style="text-align:center;">出错啦！！</h1>
 <p style="text-align:center;">出错信息：${requestScope.exception}</p>
+<p style="text-align:center;">出错信息：${requestScope.ex}</p>
 </body>
 </html>
