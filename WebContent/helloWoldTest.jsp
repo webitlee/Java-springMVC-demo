@@ -127,6 +127,6 @@
 			console.log(data);
 		})
 	})
-	
+	 
 </script>
 </html>

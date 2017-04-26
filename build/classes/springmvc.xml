@@ -55,7 +55,7 @@
 	     <!-- 拦截指定资源 -->
 	     <mvc:interceptor>
 	         <mvc:mapping path="/testModelAttribute"/>
-	         <bean class="com.lyn.springmvc.interceptor.TestInterceptor"></bean>
+	         <bean class="com.lyn.springmvc.interceptor.TestInterceptor"></bean>  
 	     </mvc:interceptor>
 	</mvc:interceptors>
 	
