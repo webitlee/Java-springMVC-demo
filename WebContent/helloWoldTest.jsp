@@ -111,6 +111,12 @@
 		<input type="text" name="desc"/>
 		<input type="submit" value="test fileUpload"/>
 	</form>
+	<br/>
+	<a href="/springMVC/testExceptionHandlerExceptionResolver?id=2">test ExceptionHandlerExceptionResolver</a>
+	<br/>
+	<a href="/springMVC/testResponseStatusExceptionResolver?id=10">test ResponseStatusExceptionResolver</a>
+	<br/>
+	<a href="/springMVC/testDefaultHandlerExceptionResolver">test DefaultHandlerExceptionResolver</a>
 </body>
 <script>
 	$('#return_json').click(function(e){
